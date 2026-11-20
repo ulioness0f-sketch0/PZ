@@ -1,8 +1,12 @@
 # Даны два целых числа: A, B. Проверить истинность высказывания: «Хотя бы одно из чисел A и B четное».
-A = int(input("Введите значение A: "))
-B = int(input("Введите значение B: "))
+try:
+    A = int(input("Введите значение A: "))
+    B = int(input("Введите значение B: "))
 
-if (A % 2 == 0) or (B % 2 ==0):
-    print(True)
-else:
-    print(False)
+    if (A % 2 == 0) or (B % 2 ==0):
+        print(True)
+    else:
+        print(False)
+
+except ValueError:
+    print("Ошибка! Нужно вводить целые числа")
